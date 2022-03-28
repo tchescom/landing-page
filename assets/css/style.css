@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    padding-top: 10px;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container header, nav{
+    width: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header nav .logo{
+    width: 60px;
+    height: 40px;
+}
+.container header nav .logo img{
+    width: 100%;
+}
+.container header nav ul{
+    list-style: none;
+    display: flex;
+}
+.container header nav ul li{
+   padding: 5px;
+   margin: 8px;
+}
+.container header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.container header nav .menu{
+    width: 100px;
+}
+.container header nav .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header nav .menu .options{
+    cursor: pointer;
+}
+.container header nav .menu .options div{
+    width: 20px;
+    border: 1px solid #000;
+    margin: 2px 0;
+    cursor: pointer;
+    background-color: #000;
+    
+}
+section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+section .imgBx{
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .imgBx img{
+    width: 60%;
+}
+section .infoBx{
+    width: 50%;
+    height: 100%;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+section .infoBx .title{
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+section .infoBx .stars{
+    width: 100%;
+    display: flex;
+}
+.priceBtn{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+section .infoBx .price{
+    font-size: 30px;
+}
+.du{
+    margin-bottom: 0px;
+}
+span{
+    color: #888;
+    font-size: 12px;
+}
+.priceBtn a{
+    margin: 0 0 0 100px;
+    padding: 3px 15px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: red;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(246, 248, 221);
+}
+footer .info_1, .info_2, .info_3{
+    width: 20%;
+    height: 95%;
+    margin: 20px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+footer .info_1 .fa-bolt, .fa-bluetooth, .fa-battery-full{
+    margin: 0 15px 0 0;
+}
+
+@media (max-width: 400px){
+    *{
+        border: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: #fff;
+    }
+    .container{
+        width: 100%;
+        height: 1000px;
+    }
+    .container header nav ul li{
+        display: none;
+    }
+    .container section{
+        width: 100%;
+        height: 500px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container section .imgBx{
+        width: 100%;
+        height: 600px;
+    }
+    .container section .imgBx img{
+        min-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .container section .infoBx{
+       width: 100%;
+      
+    }
+    .container section .infoBx h1{
+        font-size: 24px;
+    }
+    .container section .infoBx p{
+        font-size: 14px;
+    }
+    .container section .infoBx .stars{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+    }
+    .container section .infoBx .priceBtn{
+        width: 100%;
+        min-height: 50px;
+        margin-top: 50px;
+    }
+    .container section .infoBx .priceBtn a{
+        margin: 0 0 0 70px;
+        padding: 4px 15px;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        background-color: red;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 150px;
+        position: relative;
+        background-color: rgb(246, 248, 221);
+    }
+    footer .info_1, .info_2, .info_3{
+        font-size: 12px;
+        width: 100%;
+        height: 20px;
+        display: flex;
+        padding: 0 0 0 10px;
+        align-items: center;
+    }
+}
